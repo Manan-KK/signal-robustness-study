@@ -1,5 +1,7 @@
 # SPY Signal Robustness Study & Viewer
 
+[![tests](https://github.com/Manan-KK/signal-robustness-study/actions/workflows/test.yml/badge.svg)](https://github.com/Manan-KK/signal-robustness-study/actions/workflows/test.yml)
+
 A small, auditable research package for answering a narrow question: does a
 market-event model retain skill when every forecast is trained only on labels
 that were fully resolved before the decision date?
@@ -58,7 +60,7 @@ not reproduced by this public repository**:
 - 286 parameter variants across 22 anchored walk-forward folds and 45 purged
   combinatorial splits.
 - Five models evaluated on identical labels, with up to 1,101 observations per
-  model for the principal half-recovery definition.
+  model for the principal 20-trading-day half-recovery definition.
 - All five models had negative Brier skill versus the history-only base-rate
   forecast for that definition. A different full-recovery label showed limited,
   model-dependent positive skill, so the honest finding was weak and
